@@ -62,3 +62,7 @@ class Home(MethodView):
 
 	def post(self):
 		return redirect(url_for('bp.price'))
+
+class GreetPage(MethodView):
+	def get(self):
+		return render_template('/bitcoin/greet.html')
